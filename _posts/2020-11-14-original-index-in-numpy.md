@@ -22,4 +22,4 @@ The trick is to do another indexing:
 ```python
 ori_args = np.argwhere(Y == 0).squeeze()
 ```
-and `ori_args[args]` gives you the four original position of the data points chosen in `X`.
+and `ori_args[args]` gives you the four original position of the data points in `X`.
