@@ -7,7 +7,8 @@ A common pattern found doing classification:
 Given dataset `X`, label `Y`, and a class `c`, operate on `X[Y=c]`and extract a few data points.
 
 For example, the following example sort all data points in class 0 and find out the two smallest and two biggest:
-```python3
+
+```python
 # finds the two smallest samples and two largest samples of that class
 X_class = X[Y=0]
 args = np.argsort(X_class)[[0,1,-2,-1]]
