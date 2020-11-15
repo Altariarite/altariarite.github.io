@@ -1,6 +1,6 @@
 ---
 layout: posts
-tags: ["python", "numpy"]
+tags: python numpy
 title: "Searching for original index in numpy"
 published: true
 ---
