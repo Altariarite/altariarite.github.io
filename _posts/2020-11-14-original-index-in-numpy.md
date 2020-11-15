@@ -1,11 +1,8 @@
 ---
-published: false
+layout: posts
+title: "Searching for original index in numpy"
+published: true
 ---
----
-tags:python
----
-## Searching for original index in numpy
-
 A common pattern found doing classification:
 Given dataset `X`, label `Y`, and a class `c`, operate on `X[Y=c]`and extract a few data points.
 
