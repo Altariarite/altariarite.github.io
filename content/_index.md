@@ -28,6 +28,6 @@ date_format = "%F"
 
 Hi, welcome. I am collecting thoughts on computer, music and various other interesting things here. 
 
-Programming languages I like: Elixir, Clojure, Rust and Haskell.
+I like Elixir, Clojure, Rust and Haskell.
 
-In 2025 I got introduced to Nix. Since then I have used nix to replace homebrew on mac, and NixOS to replace Windows on my gaming desktop. It's working great so far!
+In 2025 I was converted to a Nix enjoyer. I have since replaced Homebrew on Mac with Nix, and Windows on my gaming desktop with NixOS.
