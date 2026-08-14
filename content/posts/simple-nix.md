@@ -4,7 +4,7 @@ date = 2026-08-14
 draft = true
 +++
 
-You do not need NixOS, Flakes, or Home Manager to benefit from Nix. It actually feels not so different from `brew` or `pip`.
+You do not need to learn NixOS, Flakes, or Home Manager to benefit from Nix. It actually feels not so different from `brew` or `pip`.
 
 If you are getting started with Nix (the package manager, like Homebrew), or NixOS (the Linux distribution, like Ubuntu), there's a daunting amount of information online. All sorts of fancy stuff to use. I started by reading a [book](https://nixos-and-flakes.thiscute.world/) on NixOS and Flakes and Home Manager (oh my!). I copied things to my config without really understanding what they are doing.
 
