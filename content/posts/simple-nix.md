@@ -11,7 +11,7 @@ If you are getting started with Nix (the package manager, like Homebrew), or Nix
 While it's a nice book, recently^[1] I realised you can start super simple. 
 
 - by using Nix just like any other package manager, but with nicer properties
-- by writing a simple file to declare the packages. It's like requirements.txt, node_modules.json, Cargo.toml...You name it
+- by writing a simple file to declare the packages. It's like `requirements.txt`, `package.json`, `Cargo.toml`...You name it
   
 And that's really all you need to start.
 
