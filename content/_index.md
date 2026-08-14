@@ -13,7 +13,7 @@ id = "altariarite"
 bio = "心斋坐忘，至人己无"
 # avatar = "img/avatar.webp"
 links = [
-    #{ name = "GitHub", icon = "github", url = "https://github.com/<your-username>" },
+    { name = "GitHub", icon = "github", url = "https://github.com/altariarite" },
     #{ name = "Email", icon = "email", url = "mailto:<your-email-address>" },
     #{ name = "Twitter", icon = "twitter", url = "https://twitter.com/<your-username>" },
     #{ name = "Mastodon", icon = "mastodon", url = "https://mastodon.social/<your-username>", rel_me = true },
@@ -26,4 +26,8 @@ recent_more_text = "more »"
 date_format = "%F"
 +++
 
-Hi, welcome. I am collecting thoughts on programming, music and various other intersting things here. I like Elixir, Clojure, Rust and Haskell.
+Hi, welcome. I am collecting thoughts on computer, music and various other interesting things here. 
+
+Programming languages I like: Elixir, Clojure, Rust and Haskell.
+
+In 2025 I got introduced to Nix. Since then I have used nix to replace homebrew on mac, and NixOS to replace Windows on my gaming desktop. It's working great so far!
