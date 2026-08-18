@@ -6,16 +6,12 @@ draft = true
 
 > Verdict: You do not need to learn NixOS, Flakes, or Home Manager to benefit from Nix. It actually feels not so different from `brew` or `pip`.
 
-If you are getting started with Nix (the package manager, like Homebrew), or NixOS (the Linux distribution, like Ubuntu), there's a daunting amount of information online. All sorts of fancy stuff to use. I started by reading a [book](https://nixos-and-flakes.thiscute.world/) on NixOS and Flakes and Home Manager (oh my!). I copied things to my config without really understanding what they are doing.
-
-While it's a nice book, recently[^1] I realised you can start super simple: 
+Recently[^1] I realised you can start super simple with Nix: 
 
 [^1]: After a conversation with [trofi](https://trofi.github.io/), thank you!
 
-- by using Nix just like any other package manager, but with nicer properties
-- by writing a simple file to declare the packages. It's like `requirements.txt`, `package.json`, `Cargo.toml`...You name it
-  
-And that's really all you need to start using Nix.
+- by using Nix just like any other package manager, but with supercharged properties
+- by writing a simple file to declare the packages. It will be like `requirements.txt`, `package.json`, `Cargo.toml`...
 
 ## Level 1: Replacing homebrew
 
@@ -29,12 +25,22 @@ this path will be fetched (30.3 KiB download, 110.4 KiB unpacked):
 copying path '/nix/store/xcb6pmfxwh0x7xn0qhcfhw9b4wv53fcm-hello-2.12.3' from 'https://cache.nixos.org'...
 building '/nix/store/pxi4fgnqdnf73miqlx7zyfwciv5dkyh3-user-environment.drv'...
 ```
+While the above is convenient, it's not the true power of Nix. Nix really shines when used declaratively.
 ## Level 2: Going Declarative
+We can say want packages we want in a `package.nix` file:
+```
+with import <nixpkgs> { };
+[
+  vim
+  git
+  # Keep the rest of your packages...
+]
+```
+And when we run `nix-env -f package.nix -ir`, Nix installs the packages, and removes all packages that are not in the list. Now we have an environment that's always matching what's written down in the file.
 
+## Level 3: Pinning package versions
+So far we've been packages out of thin air, we don't really know where they come from, and we are not specifying versions behind package names. How does Nix know which version to download?
 
-
-
-Well why should you do all the above instead of using `brew install`? 
 
 ## Benefit 1: Nix tidies your dependencies
 This becomes obvious with programs that depends on other programs. Take clojure for example, the official doc says:
