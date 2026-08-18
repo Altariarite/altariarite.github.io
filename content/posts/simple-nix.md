@@ -7,8 +7,6 @@ date = 2026-08-14
 
 Nix is a nice package manager that can be used on Mac and Linux. Recently[^1] I realised you can start super simple: 
 
-[^1]: After a conversation with [trofi](https://trofi.github.io/), thank you!
-
 - by using Nix just like any other package manager, but with supercharged properties
 - by writing a simple file to declare the packages. It will be like `requirements.txt`, `package.json`, `Cargo.toml`...
 
@@ -72,9 +70,9 @@ What's so cool about Nix?
 
 ## Benefit 1: Nix tidies your dependencies
 This becomes obvious with programs that depends on other programs. Take clojure for example, the official doc says:
-> ## Prerequisite installation details
+> **Prerequisite installation details**
 > ...
-> ### Java
+> **Java**
 > Clojure requires Java. ....
 > If you don’t already have Java installed, we recommend installing Adoptium Temurin 25.
 > To use the Adoptium Temurin installers:
@@ -144,3 +142,5 @@ Switching generations is fast because Nix does not reinstall everything. Each ge
 Nix atomically changes which generation is active.
 
 Nix gives me peace of mind and now I can't go back to using package manager that's not declarative. 
+
+[^1]: After a conversation with [trofi](https://trofi.github.io/), thank you!
